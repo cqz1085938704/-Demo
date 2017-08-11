@@ -13,6 +13,8 @@
 		325FDD221EFCC535002A7B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325FDD201EFCC535002A7B87 /* Main.storyboard */; };
 		325FDD241EFCC535002A7B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 325FDD231EFCC535002A7B87 /* Assets.xcassets */; };
 		325FDD271EFCC535002A7B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325FDD251EFCC535002A7B87 /* LaunchScreen.storyboard */; };
+		325FDD301EFCC5CA002A7B87 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 325FDD2F1EFCC5CA002A7B87 /* libsqlite3.0.tbd */; };
+		325FDD331EFCC77C002A7B87 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325FDD321EFCC77C002A7B87 /* DatabaseManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		325FDD231EFCC535002A7B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		325FDD261EFCC535002A7B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		325FDD281EFCC535002A7B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		325FDD2F1EFCC5CA002A7B87 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		325FDD311EFCC77C002A7B87 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		325FDD321EFCC77C002A7B87 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325FDD301EFCC5CA002A7B87 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				325FDD161EFCC535002A7B87 /* SQLite缓存 */,
 				325FDD151EFCC535002A7B87 /* Products */,
+				325FDD2E1EFCC5CA002A7B87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +69,8 @@
 				325FDD1B1EFCC535002A7B87 /* AppDelegate.m */,
 				325FDD1D1EFCC535002A7B87 /* ViewController.h */,
 				325FDD1E1EFCC535002A7B87 /* ViewController.m */,
+				325FDD311EFCC77C002A7B87 /* DatabaseManager.h */,
+				325FDD321EFCC77C002A7B87 /* DatabaseManager.m */,
 				325FDD201EFCC535002A7B87 /* Main.storyboard */,
 				325FDD231EFCC535002A7B87 /* Assets.xcassets */,
 				325FDD251EFCC535002A7B87 /* LaunchScreen.storyboard */,
@@ -77,6 +86,14 @@
 				325FDD181EFCC535002A7B87 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		325FDD2E1EFCC5CA002A7B87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				325FDD2F1EFCC5CA002A7B87 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +127,7 @@
 				TargetAttributes = {
 					325FDD131EFCC535002A7B87 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZAB4L2B7UQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325FDD331EFCC77C002A7B87 /* DatabaseManager.m in Sources */,
 				325FDD1F1EFCC535002A7B87 /* ViewController.m in Sources */,
 				325FDD1C1EFCC535002A7B87 /* AppDelegate.m in Sources */,
 				325FDD191EFCC535002A7B87 /* main.m in Sources */,
@@ -274,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZAB4L2B7UQ;
 				INFOPLIST_FILE = "SQLite缓存/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.dev.SQLite--";
@@ -285,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZAB4L2B7UQ;
 				INFOPLIST_FILE = "SQLite缓存/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.dev.SQLite--";
@@ -311,6 +332,7 @@
 				325FDD2D1EFCC535002A7B87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
